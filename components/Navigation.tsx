@@ -40,7 +40,12 @@ export default function Navigation() {
       </Link>
 
       {/* Center nav */}
-      <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+      <div style={{
+        display: 'flex',
+        gap: '40px',
+        alignItems: 'center',
+        marginLeft: '580px',
+      }}>
         {links.map(link => (
           <Link key={link.href} href={link.href} style={{
             textDecoration: 'none',

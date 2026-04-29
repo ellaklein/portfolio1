@@ -47,7 +47,7 @@ export default function AboutPage() {
     height: '360px',
   }}>
     <Image
-      src="/ellla.jpg"
+      src="/ella.jpg"
       alt="Portrait von Ella"
       fill
       style={{ objectFit: 'cover' }}

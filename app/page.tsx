@@ -115,7 +115,7 @@ export default function Home() {
     overflow: 'hidden'
   }}>
     <Image
-      src="/miau.png"
+      src="/homepicture.png"
       alt="miau"
       fill
       style={{
