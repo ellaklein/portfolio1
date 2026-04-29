@@ -29,6 +29,12 @@ a, button { cursor: pointer; }
 .font-display { font-family: 'Bebas Neue', sans-serif; }
 .font-mono { font-family: 'Space Mono', monospace; }
 
+ @media (max-width: 768px) {
+  .connect-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 .marquee-wrap { overflow: hidden; border-top: 1px solid var(--black); border-bottom: 1px solid var(--black); }
 .marquee-track { display: flex; width: max-content; animation: marquee 22s linear infinite; }
 .marquee-track:hover { animation-play-state: paused; }

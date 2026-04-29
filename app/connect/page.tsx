@@ -1,3 +1,4 @@
+'use client'
 export default function ConnectPage() {
   return (
     <div>
@@ -30,7 +31,8 @@ export default function ConnectPage() {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         borderBottom: '1px solid rgba(10,10,10,0.12)',
-      }}>
+      }}
+      className="connect-grid">
 
         {/* LEFT TEXT */}
         <div style={{
@@ -70,9 +72,11 @@ Always happy to connect.
           ].map((item, i) => (
             <a
               key={i}
+              href={item.label === 'Email' ? `mailto:${item.value}` : item.value}
               target="_blank"
+              rel="noopener noreferrer"
               style={{
-                padding: '40px',
+                padding: '35px',
                 borderBottom: '1px solid rgba(10,10,10,0.12)',
                 textDecoration: 'none',
                 color: 'inherit',
@@ -80,6 +84,13 @@ Always happy to connect.
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 transition: 'background 0.2s ease',
+                cursor: 'pointer',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgba(10,10,10,0.03)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'transparent'
               }}
             >
               <span className="font-mono" style={{
@@ -90,10 +101,15 @@ Always happy to connect.
                 {item.label}
               </span>
 
-              <span style={{
-                fontSize: '14px',
-                fontWeight: 500,
-              }}>
+              <span
+                style={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  transition: 'transform 0.2s ease',
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateX(4px)')}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateX(0)')}
+              >
                 {item.value}
               </span>
             </a>

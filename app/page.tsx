@@ -32,13 +32,13 @@ export default function Home() {
 
       {/* HERO */}
       <section style={{
-        padding: '80px 40px 60px',
+        padding: '50px 40px 40px',
         borderBottom: '1px solid rgba(10,10,10,0.12)',
         display: 'grid',
         gridTemplateColumns: '1fr auto',
         gap: '40px',
         alignItems: 'center',
-        minHeight: '55vh',
+        minHeight: '45vh',
         position: 'relative',
       }}>
         <div>
@@ -95,8 +95,8 @@ export default function Home() {
 
         <div style={{
   position: 'absolute',
-  right: '700px',
-  top: '42%',
+  right: '40px',
+  top: '40%',
   transform: 'translateY(-50%)',
   display: 'flex',
   flexDirection: 'column',
