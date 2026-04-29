@@ -33,6 +33,15 @@ a, button { cursor: pointer; }
   .connect-grid {
     grid-template-columns: 1fr !important;
   }
+
+  .hero-image {
+    position: static !important;
+    transform: none !important;
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .marquee-wrap { overflow: hidden; border-top: 1px solid var(--black); border-bottom: 1px solid var(--black); }

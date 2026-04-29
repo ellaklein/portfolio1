@@ -106,6 +106,7 @@ Always happy to connect.
                   fontSize: '14px',
                   fontWeight: 500,
                   transition: 'transform 0.2s ease',
+                  wordBreak: 'break-word',
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateX(4px)')}
                 onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateX(0)')}

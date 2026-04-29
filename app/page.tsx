@@ -31,7 +31,7 @@ export default function Home() {
     <div style={{ minHeight: '100vh' }}>
 
       {/* HERO */}
-      <section style={{
+      <section className="hero-grid" style={{
         padding: '50px 40px 40px',
         borderBottom: '1px solid rgba(10,10,10,0.12)',
         display: 'grid',
