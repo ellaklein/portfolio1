@@ -93,9 +93,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div style={{
+        <div className="hero-image" style={{
   position: 'absolute',
-  right: '40px',
+  right: '50%',
   top: '40%',
   transform: 'translateY(-50%)',
   display: 'flex',
