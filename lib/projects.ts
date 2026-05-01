@@ -14,6 +14,11 @@ export type Project = {
     alt: string;
     description?: string;
   };
+  images?: {
+    src: string;
+    alt: string;
+    description?: string;
+  }[];
 };
 
 export const projects: Project[] = [
@@ -71,7 +76,42 @@ export const projects: Project[] = [
       "Screenshot of the 3D game scene.",
   },
 },
+
+{
+  slug: "movea-mobility",
+  title: "Movea – Autonomous Mobility Concept",
+  subtitle: "Service design & UX concept for autonomous transport in Munich",
+  short:
+    "Service design project exploring autonomous mobility and public transport through user research, interviews, and prototyping.",
+
+  description:
+    "Movea is a service design project exploring how autonomous mobility systems can be integrated with public transport in Munich. The goal was to design a seamless and user-centered mobility experience that combines autonomous rides with existing public transport. The process was grounded in qualitative user research, including interviews and cultural probes to understand mobility habits, expectations, and concerns. Key insights highlighted the importance of trust, transparency, flexibility, and clear system understanding when interacting with autonomous transport. Based on these findings, a holistic service concept was developed, mapping the full user journey – from planning a trip to completing it. The solution includes an app interface that allows users to choose between autonomous direct rides and connections with public transport, while maintaining clarity and control throughout the experience. The interface focuses on intuitive route planning, real-time availability of autonomous vehicles, and a clear overview of different mobility options. The project demonstrates how future mobility systems can be designed as integrated, accessible services rather than isolated technologies.",
+
+  tags: ["Service Design", "UX", "User Research", "Prototyping", "Mobility"],
+
+  role: "Research, Concept & UX Design",
+
+  tech: ["Figma"],
+    links: [
     {
+      label: "View Prototype",
+      href: "https://www.figma.com/proto/xJ9j2bdGrtS0R3yCMgTsWo/Movea?page-id=0%3A1&node-id=13-170&p=f&viewport=115%2C297%2C0.1&t=7YyvV3OPqCeiwWJV-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=13%3A165&show-proto-sidebar=1"
+    }
+  ],
+  images: [
+    {
+      src: "/movea.png",
+      alt: "Movea mobility app prototype",
+      description: "Route planning interface with real-time availability of autonomous vehicles."
+    },
+    {
+      src: "/movea2.png",
+      alt: "Autonomous transport overview"
+    }
+  ],
+},
+
+{
   slug: "reifenmuell-typografie",
   title: "Typographic Art Collection",
   subtitle: "Typography & visual concept on the theme of waste",
@@ -88,24 +128,6 @@ export const projects: Project[] = [
         "Photo of part of my series on waste, shown during an exhibition at Munich University of Applied Sciences.",
     },
   },
-  {
-  slug: "se-grundlagen",
-  title: "Software Engineering – Fundamentals & Module Project",
-  subtitle: "OOP, Git workflow & teamwork",
-  short:
-    "Multiple practice projects and a module assignment focused on structured software development.",
-  description:
-    "The Software Engineering module covered fundamental concepts of software development through practical implementation. This included several small practice projects and a larger module project, each focusing on clean code, clear structure, and teamwork.\n\nProjects included an MP3 player with state-based logic and other applications such as Clothing Mate and a Uno game. The emphasis was on modeling classes appropriately, defining states clearly, and separating responsibilities in code.\n\nA key part of the work was learning to use Git: working with branches, merge requests, and a prescribed workflow to simulate realistic collaborative development. Most projects were implemented in Python and helped develop a basic understanding of software architecture, version control, and team collaboration.",
-  tags: ["Python", "OOP", "Git", "Software Engineering"],
-  role: "Development",
-  tech: ["Python", "Git"],
-  codeImage: {
-    src: "/softwareeng.png",
-    alt: "Code excerpt from the UNO game (main.py)",
-    description:
-      "The excerpt shows the entry point (main.py) of a Uno game with import of game and player classes, creation of the game instance, and the main game loop (playing rounds, checking for game end)."
-  }
-},
 {
   slug: "moosburg-website",
   title: "Moosburg Website Prototype",
@@ -113,10 +135,16 @@ export const projects: Project[] = [
   short:
     "UX/UI prototype for a citizen portal focused on transparent case management and intuitive user guidance.",
   description:
-    "This project involved developing a website prototype for the city of Moosburg, based on a real-world problem: cumbersome and non-transparent communication between citizens and city administration.\n\nThe foundation was qualitative interviews with potential users to identify needs, expectations, and challenges in dealing with municipal requests. Transparency, ease of use, and traceability of requests emerged as key requirements.\n\nBased on these findings, a holistic UX/UI concept was created to cover the entire process: from submitting a request to status tracking, as well as map and statistics views. Special focus was placed on clear information structure, intuitive navigation, and an understandable, accessible interface.\n\nThe project combines user research, conceptual thinking, and visual design, demonstrating how digital citizen services can be made more user-centered, transparent, and efficient.",
+    "This project focused on developing a website prototype for the city of Moosburg, based on a real-world problem: inefficient and non-transparent communication between citizens and the city administration. The process was grounded in qualitative user research. Through interviews with potential users, key needs, expectations, and pain points in dealing with municipal services were identified. Transparency, ease of use, and clear status tracking emerged as central requirements. These insights informed the development of a holistic UX/UI concept covering the entire interaction flow – from submitting a request to tracking its progress, including map and data views. Particular attention was given to information architecture, intuitive navigation, and a clear, accessible interface. The project demonstrates how user research can directly shape digital services, resulting in more user-centered, transparent, and effective solutions.",
   tags: ["UX/UI","Figma","User Research", "Prototyping", "Web Design"],
   role: "Concept & Design",
   tech: ["Figma"],
+  links: [
+    {
+      label: "View Prototype",
+      href: "https://www.figma.com/proto/2jTmmi7xILB4wAKKTm0mYC/Prototyp_Moosburg?page-id=0%3A1&node-id=1-3&p=f&viewport=-419%2C412%2C0.1&t=6DXSMtV7Xils7Mzh-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3"
+    }
+  ],
   codeImage: {
     src: "/Moosburg.png",
     alt: "Website prototype for Moosburg",
@@ -131,11 +159,11 @@ export const projects: Project[] = [
   short:
     "Web app with database integration, login system, and deliberately integrated security flaws for analysis and practical attack simulation.",
   description:
-    "This project involved developing a notes web application with database connection, login authentication, and basic user management. In addition to classic features like creating, saving, and managing notes, the main focus was on practical web security.\n\nA special aspect of the project was the intentional integration of vulnerabilities, allowing students to attack and analyze each other's applications in virtual machines. This enabled typical security flaws to be understood and exploited in practice, not just theory.\n\nThe project combined web development with security concepts, providing a better understanding of how attacks on web applications work, what risks arise from insecure implementations, and why security must be considered from the outset.",
+    "This project involved developing a notes web application with database connection, authentication, and basic user management. In addition to implementing core features such as creating, saving, and organizing notes, I focused on designing a clear and intuitive user interface that supports simple and efficient interaction. A key aspect of the project was the intentional integration of vulnerabilities, allowing students to analyze and exploit each other's applications in virtual environments. This provided hands-on insights into common security flaws and their real-world impact. Alongside the technical implementation, I worked on structuring the application and interaction flows to ensure usability and clarity, even in more complex scenarios like authentication and data handling.The project combines web development, security concepts, and user-centered design, highlighting the importance of building applications that are not only functional and secure, but also understandable and easy to use.",
   tags: ["Security", "Web", "Database", "Authentication", "VM"],
   role: "Concept & Implementation",
   tech: ["JavaScript", "Node.js", "Database"],
-  codeImage: {
+  codeImage: { 
     src: "/scratchpadd.png",
     alt: "Screenshot of the Notes Web App",
     description:
