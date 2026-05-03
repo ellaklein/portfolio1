@@ -22,24 +22,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-  slug: "oma-astra",
-  title: "Oma Astra – Astrological Chatbot",
-  subtitle: "Interactive chatbot focused on UX and personality",
-  short:
-    "Character-driven chatbot focused on dialogue design and user interaction.",
-  description:
-    "OmaAstra was developed in the first semester as a creative coding project with the goal of building a chatbot that goes beyond functionality by having a clear personality. The focus was on designing a consistent character (‘astrology grandma’) with a warm, humorous and empathetic tone.\n\nThe project emphasized dialogue structure, response logic and iterative prompt design. Besides technical aspects, user experience played a key role: how systems communicate, how conversations feel and how trust is created. The project combines technical thinking with storytelling and design decisions, serving as an introduction to interactive conversational systems.",
-  tags: ["Chatbot", "UX", "UI", "Python", "Creative Coding"],
-  role: "Concept, UX, Implementation",
-  tech: ["Python"],
-    codeImage: {
-      src: "/oma-astra-code.png",
-      alt: "Code snippet from OmaAstra – compatibility logic",
-      description:
-        "This snippet shows the compatibility logic where zodiac signs are mapped to elements and evaluated for harmony.",
-    },
-  },
+
   {
   slug: "hangman-webapp",
   title: "Hangman Webapp",
@@ -58,6 +41,24 @@ export const projects: Project[] = [
         "Screenshot of the Hangman game interface showing the current game state and input logic.",
     },
   },
+  {
+  slug: "informationsdesign-diagramme",
+  title: "Information Design – Interactive Data Visualization",
+  subtitle: "Web application for analyzing personal photo data",
+  short:
+    "Interactive web app with charts for analyzing personal photo data by time, location, and usage.",
+  description:
+    "As part of the Information Design module, I developed a web application to analyze and visualize my personal photo data from 2025.\n\nThe project was based on my own photos, whose metadata—such as timestamps, GPS data, and color values—were evaluated. Several charts were created to provide different perspectives on the year, including time trends, geographic distributions, and visual patterns.\n\nSome of the visualizations are interactive, inviting users to explore the data themselves. The app is built as a scroll-based page, with content appearing step by step to create a visual narrative of the year.\n\nThe application is complemented by a monthly slideshow of selected images, making the data tangible and personal.\n\nThe project combines data, design, and interaction, showing how personal information can be translated into a clear and narrative form.",
+  tags: ["Information Design", "Data Visualization", "Svelte", "JavaScript"],
+  role: "Concept & Implementation",
+  tech: ["Svelte", "JavaScript"],
+  codeImage: {
+    src: "/infodesign.png",
+    alt: "Interactive charts of the web application",
+    description:
+      "Monthly slideshow at the end of the application; the map view with a selected location is visible at the top, and the footer at the bottom.",
+  },
+},
     {
   slug: "deadmans-hand",
   title: "Deadman’s Hand Poker Game",
@@ -74,6 +75,30 @@ export const projects: Project[] = [
     alt: "Screenshot of Deadman’s Hand – 3D Poker",
     description:
       "Screenshot of the 3D game scene.",
+  },
+},
+{
+  slug: "moosburg-website",
+  title: "Moosburg Website Prototype",
+  subtitle: "UX/UI concept for a modern city website",
+  short:
+    "UX/UI prototype for a citizen portal focused on transparent case management and intuitive user guidance.",
+  description:
+    "This project focused on developing a website prototype for the city of Moosburg, based on a real-world problem: inefficient and non-transparent communication between citizens and the city administration. The process was grounded in qualitative user research. Through interviews with potential users, key needs, expectations, and pain points in dealing with municipal services were identified. Transparency, ease of use, and clear status tracking emerged as central requirements. These insights informed the development of a holistic UX/UI concept covering the entire interaction flow – from submitting a request to tracking its progress, including map and data views. Particular attention was given to information architecture, intuitive navigation, and a clear, accessible interface. The project demonstrates how user research can directly shape digital services, resulting in more user-centered, transparent, and effective solutions.",
+  tags: ["UX/UI","Figma","User Research", "Prototyping", "Web Design"],
+  role: "Concept & Design",
+  tech: ["Figma"],
+  links: [
+    {
+      label: "View Prototype",
+      href: "https://www.figma.com/proto/2jTmmi7xILB4wAKKTm0mYC/Prototyp_Moosburg?page-id=0%3A1&node-id=1-3&p=f&viewport=-419%2C412%2C0.1&t=6DXSMtV7Xils7Mzh-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3"
+    }
+  ],
+  codeImage: {
+    src: "/Moosburg.png",
+    alt: "Website prototype for Moosburg",
+    description:
+      "Key screens of the user-centered website prototype for submitting and tracking citizen requests.",
   },
 },
 
@@ -118,8 +143,8 @@ export const projects: Project[] = [
   short:
     "Typographic series on waste focusing on tires and their aesthetic structures.",
   description:
-    "In the Typography module (first semester), the task was to focus individually on a form of waste and develop a conceptual typographic work from it. I deliberately chose tire waste, as I was fascinated by the strong grooves, patterns, and structures of car tires.\n\nIn a series of ten works, I abstracted and interpreted these characteristic forms typographically. The goal was to translate the supposed ugliness of waste into an aesthetic visual language and simultaneously raise awareness of the environmental issue. The works were exhibited and demonstrate the connection between typography, concept, and visual design.",
-  tags: ["Typography", "Concept", "Graphic Design", "Exhibition"],
+    "This typographic series explores waste through the visual language of tire structures. Fascinated by the strong grooves, repetitions, and textures found in worn car tires, I translated these elements into abstract typographic compositions. Across ten works, the raw and often overlooked aesthetics of tire waste become the foundation for a visual system that balances structure and expression. Created digitally in Adobe Illustrator, the designs focus on rhythm, contrast, and form, turning traces of use into graphic elements. The project reframes waste not as something purely negative, but as a source of visual potential—while still pointing toward its environmental impact. The series was presented in an exhibition, highlighting the connection between typography, concept, and material-inspired design.",
+  tags: ["Typography", "Concept", "Adobe", "Graphic Design", "Exhibition"],
   role: "Concept & Design",
   codeImage: {
     src: "/typo.jpg",
@@ -128,30 +153,6 @@ export const projects: Project[] = [
         "Photo of part of my series on waste, shown during an exhibition at Munich University of Applied Sciences.",
     },
   },
-{
-  slug: "moosburg-website",
-  title: "Moosburg Website Prototype",
-  subtitle: "UX/UI concept for a modern city website",
-  short:
-    "UX/UI prototype for a citizen portal focused on transparent case management and intuitive user guidance.",
-  description:
-    "This project focused on developing a website prototype for the city of Moosburg, based on a real-world problem: inefficient and non-transparent communication between citizens and the city administration. The process was grounded in qualitative user research. Through interviews with potential users, key needs, expectations, and pain points in dealing with municipal services were identified. Transparency, ease of use, and clear status tracking emerged as central requirements. These insights informed the development of a holistic UX/UI concept covering the entire interaction flow – from submitting a request to tracking its progress, including map and data views. Particular attention was given to information architecture, intuitive navigation, and a clear, accessible interface. The project demonstrates how user research can directly shape digital services, resulting in more user-centered, transparent, and effective solutions.",
-  tags: ["UX/UI","Figma","User Research", "Prototyping", "Web Design"],
-  role: "Concept & Design",
-  tech: ["Figma"],
-  links: [
-    {
-      label: "View Prototype",
-      href: "https://www.figma.com/proto/2jTmmi7xILB4wAKKTm0mYC/Prototyp_Moosburg?page-id=0%3A1&node-id=1-3&p=f&viewport=-419%2C412%2C0.1&t=6DXSMtV7Xils7Mzh-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3"
-    }
-  ],
-  codeImage: {
-    src: "/Moosburg.png",
-    alt: "Website prototype for Moosburg",
-    description:
-      "Key screens of the user-centered website prototype for submitting and tracking citizen requests.",
-  },
-},
 {
   slug: "notiz-webapp-security",
   title: "Notes Web App – Security Project",
@@ -171,22 +172,22 @@ export const projects: Project[] = [
   },
   
 },
-{
-  slug: "informationsdesign-diagramme",
-  title: "Information Design – Interactive Data Visualization",
-  subtitle: "Web application for analyzing personal photo data",
+  {
+  slug: "oma-astra",
+  title: "Oma Astra – Astrological Chatbot",
+  subtitle: "Interactive chatbot focused on UX and personality",
   short:
-    "Interactive web app with charts for analyzing personal photo data by time, location, and usage.",
+    "Character-driven chatbot focused on dialogue design and user interaction.",
   description:
-    "As part of the Information Design module, I developed a web application to analyze and visualize my personal photo data from 2025.\n\nThe project was based on my own photos, whose metadata—such as timestamps, GPS data, and color values—were evaluated. Several charts were created to provide different perspectives on the year, including time trends, geographic distributions, and visual patterns.\n\nSome of the visualizations are interactive, inviting users to explore the data themselves. The app is built as a scroll-based page, with content appearing step by step to create a visual narrative of the year.\n\nThe application is complemented by a monthly slideshow of selected images, making the data tangible and personal.\n\nThe project combines data, design, and interaction, showing how personal information can be translated into a clear and narrative form.",
-  tags: ["Information Design", "Data Visualization", "Svelte", "JavaScript"],
-  role: "Concept & Implementation",
-  tech: ["Svelte", "JavaScript"],
-  codeImage: {
-    src: "/infodesign.png",
-    alt: "Interactive charts of the web application",
-    description:
-      "Monthly slideshow at the end of the application; the map view with a selected location is visible at the top, and the footer at the bottom.",
+    "OmaAstra was developed in the first semester as a creative coding project with the goal of building a chatbot that goes beyond functionality by having a clear personality. The focus was on designing a consistent character (‘astrology grandma’) with a warm, humorous and empathetic tone.\n\nThe project emphasized dialogue structure, response logic and iterative prompt design. Besides technical aspects, user experience played a key role: how systems communicate, how conversations feel and how trust is created. The project combines technical thinking with storytelling and design decisions, serving as an introduction to interactive conversational systems.",
+  tags: ["Chatbot", "UX", "UI", "Python", "Creative Coding"],
+  role: "Concept, UX, Implementation",
+  tech: ["Python"],
+    codeImage: {
+      src: "/oma-astra-code.png",
+      alt: "Code snippet from OmaAstra – compatibility logic",
+      description:
+        "This snippet shows the compatibility logic where zodiac signs are mapped to elements and evaluated for harmony.",
+    },
   },
-},
 ];
